@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Hello World</title>
+    </head>
+    <body>
+        <script>
+        let userName  = prompt("Enter User ");
+        if(userName=='Admin'){
+            let pass = prompt("Enter Password");
+            if(pass ==="Themaster"){
+                alert("Welcome admin");
+            }
+           else if(pass ===''||pass ===null){
+                alert("Cancelled");
+            }
+
+            else{
+                alert("Wrong Password");
+            }
+
+        }
+        if(userName==null || userName == ''){
+            alert("Cancelled");
+        }
+        
+        </script>
+         
+        <p>I will work after script</p>
+    </body>
+</html>
+
