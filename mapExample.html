@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Map Function example</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+<body>
+	<script type="text/javascript">
+		 let data = [ {
+       
+  
+                "id":1,
+                "name":"Satish",
+                "designation":"Python Developer",
+                "place":"Nadiad",
+                "college":"KJIT",
+                "hobby":"Travelling"
+                
+            
+           
+        },
+        {
+            "id":2,
+            "name":"Gautam",
+            "designation":"Pharmacist",
+            "place":"Vadodara",
+            "college":"MSU",
+            "hobby":"Travelling"
+        },
+        {
+            "id":3,
+            "name":"abhishek",
+            "designation":"B.com",
+            "place":"Sevashi",
+            "college":"SPU",
+            "hobby":"Reading Books"
+            
+        },
+        {
+            "id":4,
+            "name":"Manish",
+            "designation":"BCA",
+            "place":"Maroli",
+            "college":"Pune University",
+            "hobby":"Entrepreneur"
+            
+        }
+        
+    ]  </script>
+
+    <table class="table table-bordered bg-dark text-light">
+    	<tr>
+    		<th>Id</th>
+    		<th>Name</th>
+    		<th>Designation</th>
+    		<th>Place</th>
+    		<th>College</th>
+    		<th>Hobby</th>
+    	</tr>
+    	
+    
+    <script type="text/javascript">
+
+    let display = data.map((e)=>{
+    	console.log(e);
+    	document.write(`<tr>`);
+    	document.write(`<td>${e.id}</td>`);
+    	document.write(`<td>${e.name}</td>`);
+    	document.write(`<td>${e.designation}</td>`);
+    	document.write(`<td>${e.place}</td>`);
+    	document.write(`<td>${e.college}</td>`);
+    	document.write(`<td>${e.hobby}</td>`);
+    	document.write(`</tr>`);
+    });
+	</script>
+</table>
+</body>
+</html>

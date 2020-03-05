@@ -1,0 +1,46 @@
+length => Shows the length of an array; arr.length();
+sort => Sort the array in ascending/descending order arr.sort()
+
+pop=> Removes the last element in an array 
+push => Add new item in the array and returns the new length
+
+shift=> Removes the first item of an array.
+
+unshift => methods adds new items to the beginning of an array, 
+		and returns the new length.
+
+reverse => The reverse method reverses the order of the elements in an array.
+
+isArray => method determines whether an object is an array
+
+join => Joins the array items according to given characters.
+________________________________________________________________________________
+arraySplice => methods insert and delete the method on the dedicated position.
+
+example:
+ let arr = ["Vivek","Jha","Sudhir","Jha"];
+
+arr.splice(inserted position, delete position, Inserted Data,Inserted Data)
+
+arr.splice(1,3,"Satish","Gautam")
+
+output = 
+________________________________________________________________________________
+
+concat => Merges the array elements of an array
+
+Concat through values in the array
+arr.concat([1,2,3,4]);
+__________________________________________________________________________________
+arr.slice=> Use to extract out data from left to right and vice-versa.
+
+We can decide the range to extract data.
+let arr = ["Vivek","Jha","Sudhir","Jha"];
+arr.slice(1,3);
+
+output=["Jha","Sudhir"];
+___________________________________________________________________________________
+
+toString =>
+
+Converts the array into string
