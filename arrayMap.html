@@ -1,0 +1,68 @@
+<script>        
+    let data = [ {
+       
+  
+                "id":1,
+                "name":"Satish",
+                "designation":"Python Developer",
+                "place":"Nadiad",
+                "college":"KJIT",
+                "hobby":"Travelling"
+                
+            
+           
+        },
+        {
+            "id":2,
+            "name":"Gautam",
+            "designation":"Pharmacist",
+            "place":"Vadodara",
+            "college":"MSU",
+            "hobby":"Travelling"
+        },
+        {
+            "id":3,
+            "name":"abhishek",
+            "designation":"B.com",
+            "place":"Sevashi",
+            "college":"SPU",
+            "hobby":"Reading Books"
+            
+        }
+        
+    ]   
+
+    </script>
+
+    <table border="1">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Designation</th>
+            <th>Place</th>
+            <th>College</th>
+            <th>Hobby</th>
+        </tr>
+        
+
+    <script>
+
+let all =  data.map( (e)=>{
+console.log(e)
+document.write(`<tr>`);
+   document.write(`<td>${e.id}</td>`);
+   document.write(`<td>${e.name}</td>`);
+   document.write(`<td>${e.designation}</td>`);
+   document.write(`<td>${e.place}</td>`);
+   document.write(`<td>${e.college}</td>`);
+   document.write(`<td>${e.hobby}</td>`);
+document.write('</tr>');
+})
+document.write(all);
+</script>
+</tr>
+
+</table>
+
+<p>I will run after script.</p>
+
