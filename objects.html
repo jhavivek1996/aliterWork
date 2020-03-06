@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Objects Example</title>
+</head>
+<body>
+<script type="text/javascript">
+			 let data =  [{
+                "id":1,
+                "name":"Satish",
+                "designation":"Python Developer",
+                "place":"Nadiad",
+                "college":"KJIT",
+                "hobby":"Travelling"
+
+           
+        },
+        {
+            "id":2,
+            "name":"Gautam",
+            "designation":"Pharmacist",
+            "place":"Vadodara",
+            "college":"MSU",
+            "hobby":"Travelling"
+        },
+        {
+            "id":3,
+            "name":"abhishek",
+            "designation":"B.com",
+            "place":"Sevashi",
+            "college":"SPU",
+            "hobby":"Reading Books"
+            
+        },
+        {
+            "id":4,
+            "name":"Manish",
+            "designation":"BCA",
+            "place":"Maroli",
+            "college":"Pune University",
+            "hobby":"Entrepreneur"
+            
+        }
+        ]
+    
+
+    let clone = Object.assign({},data);
+    let ids = data.id++;
+    alert(clone.ids)
+    for(i in ids){
+    	console.log(i);
+    }
+    
+</script>
+
+</body>
+</html>
+
+<!-- <script type="text/javascript">
+	let user = {
+  				"id":1,
+                "name":"Satish",
+                "designation":"Python Developer",
+                "place":"Nadiad",
+                "college":"KJIT",
+                "hobby":"Travelling"
+
+  };
+
+let clone = Object.assign({}, user);
+
+// alert( user.sizes === clone.sizes ); // true, same object
+
+// user and clone share sizes
+user.id++;       // change a property from one place
+alert(clone.id); 
+</script> -->
