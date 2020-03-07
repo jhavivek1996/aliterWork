@@ -1,0 +1,9 @@
+Things in which need more practice 
+1. for loop 
+2. array
+3. if condition
+4.json
+5.xml=> How create xml using JS
+6. vue version 1=>nuxt js
+7. sql query
+
