@@ -1,0 +1,27 @@
+JS string methods
+
+How to find the position of the string.
+=> Question: Find the position of the d.
+let str = "bdjfbj"
+
+console.log(str.indexOf("b"));
+
+How to extract any part of the string 
+
+=> Question: I want to extract the a word from a string 
+let str ="JS string methods"; // I want to extract "string"
+
+str.slice(start,end);
+
+console.log(str.slice(3,9));
+
+Array method to splice a an Array
+
+=> Question: I want to remove orange from fruits
+
+The splice() method adds/removes items to/from an array, and returns the removed item(s).
+
+
+var fruits = ["Banana", "Orange", "Apple", "Kiwi"];
+fruits.splice(starting point,No. of items);
+fruits.splice(1,1) 
