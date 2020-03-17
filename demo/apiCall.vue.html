@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fake Api Call</title>
+</head>
+<body>
+	<div id="#app">
+		<!-- <table border="1">
+			<tr>
+				<th>User Id</th>
+				<th>id</th>
+				<th>title</th>
+				<th>Completed</th>
+			</tr>
+			<tr v-for="e in info">
+				<td>{{ e.userId }}</td>
+				<td>{{ e.id }}</td>
+				<td>{{ e.title }}</td>
+				<td>{{ e.completed }}</td>
+			</tr>
+		</table>
+ -->
+		<p>{{ info }}</p>
+
+	</div>
+
+ -->
+<script type="text/javascript">
+	new Vue({
+		el:"#app",
+		 data(){
+		 	info:null
+		 },
+		 mounted() {
+   		 axios{
+
+   		 }
+   		  .get('https://api.coindesk.com/v1/bpi/currentprice.json')
+     	  .then(response => (this.info = response.data.bpi))
+  }
+	})
+</script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+  <title>Vue Checkbox</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+
+<div class="container" id="app">
+  <h2>Check box inputs</h2>
+  <form>
+    <div class="checkbox">
+      <label><input type="checkbox" v-model="fruits" value="Banana">Banana</label>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" v-model="fruits" value="Apple">Apple</label>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" v-model="fruits" value="Guava">Guava</label>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" v-model="fruits" value="Mango">Mango</label>
+    </div>
+
+
+    <h2>Radio button inputs</h2>
+
+     <div class="radio">
+      <label><input type="radio" v-model="gender" value="male">Male</label>
+    </div>
+    <div class="radio">
+      <label><input type="radio" v-model="gender" value="female">Female</label>
+    </div>
+
+
+
+
+
+
+  </form>
+
+
+
+
+  	<label>Selected Checkbox Data</label>
+  	<div v-for="fruit in fruits" class="container jumbotron bg-primary text-warning">
+  		{{ fruit | capital }}
+  	</div><br/><br/>
+
+  	<label>Selected Checkbox Data</label>
+    <p class="container jumbotron bg-primary text-warning">{{ gender | capital }}</p>
+
+</div>
+
+
+<script type="text/javascript">
+  Vue.filter('capital',function(e){
+    return e.toUpperCase();
+  })
+	new Vue({
+		el:"#app",
+		data:{
+			fruits:[],
+			gender:''
+
+		}
+	});
+</script>
+</body>
+</html>

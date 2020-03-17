@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Introduction to vue js</title>
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+	<div id="app">
+		<p>{{ message }}</p>
+		<input type="text" v-model="message"></input>
+		<button v-on:click="hello">Hello</button>
+	</div>
+
+<script type="text/javascript">
+	new Vue({
+		el:"#app",
+		data:{
+			message : "Vivek Jha"
+		},
+		methods:{
+			hello:function(){
+				this.message = this.message.split('').reverse().join('')
+			}
+		}
+	})
+
+	
+</script>
+
+
+</body>
+</html>

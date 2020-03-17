@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Computed Properties</title>
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+	<style type="text/css">
+		
+		.available{
+			color:white;
+			background-color:black;
+		}
+	</style>
+</head>
+<body>
+	<div id="app">
+		<input type="button" value="Click A" @click="a++"/>
+		<input type="button" value="Click B" @click="b++"/>
+		<input type="button" value="Click B-" @click="b--"/>
+
+		<p v-if="{ age } ==24"> Only if {{ age }}</p>
+		<p v-else-if="{ age } ==25">If else : {{ age }}</p>
+		<p v-else="{ age } <23">else : {{ age }}</p>
+		<p>{{ b }}</p>
+
+		<p :class="{available:available}">Age of A = {{ addToA }}</p>
+		<p>Age of B= {{ addToB }}</p>
+	</div>
+
+
+	<script type="text/javascript">
+		new Vue({
+			el:"#app",
+			data:{
+				available:true,
+				age:23,
+				a:0,
+				b:0
+			},
+			computed:{
+				addToA:function(){
+					console.log("A Called");
+					return this.a + this.age;
+				},
+				addToB:function(){
+					console.log("B Called");
+					return this.b +this.age;
+				}
+			},
+			watch:{
+				a:function(){
+					console.log("Watcher for a is called " +this.a);
+				}
+			}
+		})
+	</script>
+
+</body>
+</html>
